@@ -1,0 +1,19 @@
+{
+  "concurrencyLevels": [1, 10, 100],
+  "timeTerminationInSeconds": 10,
+  "benchmarks": [
+    {
+      "executablePath": "../examples/rust_actix_bench",
+      "executableArgs": [],
+      "url": "http://localhost:1234/",
+      "jsonPath": null,
+      "method": "GET"
+    },
+    {
+      "executablePath": "../examples/rust_actix_bench",
+      "executableArgs": ["1"],
+      "url": "http://localhost:1234/",
+      "jsonPath": "../examples/request.json"
+    }
+  ]
+}
